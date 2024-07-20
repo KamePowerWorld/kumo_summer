@@ -1,0 +1,27 @@
+name: kumo_summer
+version: '${project.version}'
+main: com.kamesuta.kumo_summer.KumoSummer
+api-version: '1.21'
+commands:
+  kumo:
+    description: kumo_0621にテレポートするコマンド
+    usage: /<command>
+    aliases: []
+    permission: kumo.use
+  kumo_on:
+    description: kumoへのテレポートを有効にするコマンド
+    usage: /<command>
+    aliases: []
+    permission: kumo.admin
+  kumo_off:
+    description: kumoへのテレポートを無効にするコマンド
+    usage: /<command>
+    aliases: []
+    permission: kumo.admin
+permissions:
+  kumo.use:
+    description: /kumoコマンドを使用する権限
+    default: true
+  kumo.admin:
+    description: /kumo_onおよび/kumo_offコマンドを使用する権限
+    default: op
